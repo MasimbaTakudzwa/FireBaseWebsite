@@ -13,7 +13,7 @@ export const Navbar: React.FC<NavbarProps> = ({className}) => {
   return (
     <nav className={cn("sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60", className)}>
       <div className="container flex items-center justify-between py-2">
-        <div className="font-bold text-xl">
+        <div className="font-bold text-xl ml-4">
           {/*  Non-clickable Logo */}
           Minimalist Folio
         </div>
@@ -39,3 +39,4 @@ export const Navbar: React.FC<NavbarProps> = ({className}) => {
     </nav>
   );
 };
+
