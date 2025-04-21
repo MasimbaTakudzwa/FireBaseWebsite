@@ -8,11 +8,11 @@ interface AboutPageProps {
 }
 
 const About: React.FC<AboutPageProps> = ({className}) => {
-  const description = `
-  I am passionate about technology and design, with a focus on creating user-friendly and visually appealing solutions.
-  My background in [Your Field] has provided me with a strong foundation in problem-solving and critical thinking.
-  I enjoy working on projects that challenge me to learn new things and push the boundaries of what is possible.
-`;
+  const description = `I am Masimba Gangaidzo, a technology enthusiast with deep interests in artificial intelligence, machine learning, and cybersecurity. My academic journey began in Zimbabwe at St John's Prep where I developed foundational skills in logical thinking through my passion for chess, earning Half Colours for my achievements. This early interest in strategic thinking evolved during my time at St Stithians Boys' School in South Africa, where I embraced both physical challenges through Rugby and cultural pursuits as part of the backstage and technical team for the Drama department.
+
+My diverse background has shaped my approach to technology – I see it not just as a collection of tools but as a means to solve real-world problems with creativity and precision. The leadership and resilience I developed through outdoor education experiences like Kamoka Bush School and the Grade 11 Spirit of Adventure leadership camp have proven invaluable in my academic and professional life. These experiences taught me to approach challenges with determination and adaptability, qualities that translate directly to my work in computer science.
+
+Now based in the United Kingdom, I combine technical expertise with a global perspective. I'm particularly fascinated by the ethical implications of AI and the importance of developing unbiased systems that serve diverse populations. When I'm not immersed in code or research, I enjoy exploring the intersection of technology with other disciplines, believing that innovation often happens at these boundaries. My goal is to contribute to the field of computer science in ways that are both technically innovative and socially responsible, creating solutions that enhance security, efficiency, and accessibility in our increasingly digital world.`;
 
   const imageStyle = "rounded-md shadow-md w-full md:w-auto";
 
