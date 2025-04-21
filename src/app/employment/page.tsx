@@ -1,0 +1,68 @@
+
+import React from 'react';
+import {cn} from "@/lib/utils";
+
+interface EmploymentPageProps {
+  className?: string;
+}
+
+const Employment: React.FC<EmploymentPageProps> = ({className}) => {
+  const imageStyle = "rounded-md shadow-md";
+
+  return (
+    <main className={cn("container relative flex min-h-screen flex-col items-center py-8", className)}>
+      <section className="grid gap-8 p-8 md:grid-cols-1 lg:grid-cols-2">
+        <div className="flex flex-col gap-4">
+          <h1 className="text-4xl font-bold tracking-tight">Employment History</h1>
+          <p className="text-muted-foreground">
+            A detailed description of my employment history with relevant images.
+          </p>
+
+          <div className="mt-6 space-y-6">
+            {/* Employment 1 */}
+            <div className="grid gap-4">
+              <h2 className="text-2xl font-semibold tracking-tight">
+                [Job Title] - [Company Name]
+              </h2>
+              <p className="text-muted-foreground">
+                [Dates of Employment]
+              </p>
+              <img
+                src="https://picsum.photos/400/306" // Replace with your image URL
+                alt="Company 1"
+                className={imageStyle}
+              />
+              <p>
+                A detailed description of my role at this company, including responsibilities, achievements, and
+                skills gained.
+              </p>
+            </div>
+
+            {/* Employment 2 */}
+            <div className="grid gap-4">
+              <h2 className="text-2xl font-semibold tracking-tight">
+                [Job Title] - [Another Company Name]
+              </h2>
+              <p className="text-muted-foreground">
+                [Dates of Employment]
+              </p>
+              <img
+                src="https://picsum.photos/400/307" // Replace with your image URL
+                alt="Company 2"
+                className={imageStyle}
+              />
+              <p>
+                A detailed description of my role at this company, including responsibilities, achievements, and
+                skills gained.
+              </p>
+            </div>
+
+            {/* Add more employment history as needed */}
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+};
+
+export default Employment;
