@@ -51,7 +51,7 @@ const Education: React.FC<EducationPageProps> = ({className}) => {
                 BSc in Computer Science
               </p>
               <img
-                src="/Images/durham_castle.png"
+                src="/Images/DurhamUniLogo.png"
                 alt="Durham University Logo"
                 className={imageStyle}
               />
@@ -73,7 +73,7 @@ const Education: React.FC<EducationPageProps> = ({className}) => {
                 Secondary Education
               </p>
               <img
-                src="/Images/st_stithians_final.png"
+                src="/Images/St_stithians_final.png"
                 alt="St Stithians"
                 className={imageStyle}
               />
@@ -115,4 +115,3 @@ const Education: React.FC<EducationPageProps> = ({className}) => {
 };
 
 export default Education;
-
