@@ -1,3 +1,4 @@
+'use client';
 
 import React from 'react';
 import {cn} from "@/lib/utils";
@@ -21,7 +22,7 @@ const Employment: React.FC<EmploymentPageProps> = ({className}) => {
           <div className="mt-6 space-y-6">
             {/* Employment 1 */}
             <div className="grid gap-4">
-              <h2 className="text-2xl font-semibold tracking-tight text-center">
+              <h2 className="text-3xl font-semibold tracking-tight text-center">
                 [Job Title] - [Company Name]
               </h2>
               <p className="text-muted-foreground text-center">
@@ -32,15 +33,17 @@ const Employment: React.FC<EmploymentPageProps> = ({className}) => {
                 alt="Company 1"
                 className={imageStyle}
               />
-              <p className="text-center">
-                A detailed description of my role at this company, including responsibilities, achievements, and
-                skills gained.
-              </p>
+              <div className="flex justify-center">
+                <p className="text-center max-w-3xl">
+                  A detailed description of my role at this company, including responsibilities, achievements, and
+                  skills gained.
+                </p>
+              </div>
             </div>
 
             {/* Employment 2 */}
             <div className="grid gap-4">
-              <h2 className="text-2xl font-semibold tracking-tight text-center">
+              <h2 className="text-3xl font-semibold tracking-tight text-center">
                 [Job Title] - [Another Company Name]
               </h2>
               <p className="text-muted-foreground text-center">
@@ -51,10 +54,12 @@ const Employment: React.FC<EmploymentPageProps> = ({className}) => {
                 alt="Company 2"
                 className={imageStyle}
               />
-              <p className="text-center">
-                A detailed description of my role at this company, including responsibilities, achievements, and
-                skills gained.
-              </p>
+              <div className="flex justify-center">
+                <p className="text-center max-w-3xl">
+                  A detailed description of my role at this company, including responsibilities, achievements, and
+                  skills gained.
+                </p>
+              </div>
             </div>
 
             {/* Add more employment history as needed */}

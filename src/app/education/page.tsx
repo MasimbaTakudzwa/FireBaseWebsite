@@ -1,3 +1,4 @@
+'use client';
 
 import React from 'react';
 import {cn} from "@/lib/utils";
@@ -21,7 +22,7 @@ const Education: React.FC<EducationPageProps> = ({className}) => {
           <div className="mt-6 space-y-6">
             {/* Education Entry 1 */}
             <div className="grid gap-4">
-              <h2 className="text-2xl font-semibold tracking-tight text-center">
+              <h2 className="text-3xl font-semibold tracking-tight text-center">
                 [Degree Name] - [University Name]
               </h2>
               <p className="text-muted-foreground text-center">
@@ -32,15 +33,17 @@ const Education: React.FC<EducationPageProps> = ({className}) => {
                 alt="University 1"
                 className={imageStyle}
               />
-              <p className="text-center">
-                A detailed description of my experience at this university, including relevant coursework,
-                achievements, and extracurricular activities.
-              </p>
+              <div className="flex justify-center">
+                <p className="text-center max-w-3xl">
+                  A detailed description of my experience at this university, including relevant coursework,
+                  achievements, and extracurricular activities.
+                </p>
+              </div>
             </div>
 
             {/* Education Entry 2 */}
             <div className="grid gap-4">
-              <h2 className="text-2xl font-semibold tracking-tight text-center">
+              <h2 className="text-3xl font-semibold tracking-tight text-center">
                 [Degree Name] - [Another Institution Name]
               </h2>
               <p className="text-muted-foreground text-center">
@@ -51,10 +54,12 @@ const Education: React.FC<EducationPageProps> = ({className}) => {
                 alt="University 2"
                 className={imageStyle}
               />
-              <p className="text-center">
-                A detailed description of my experience at this institution, including relevant coursework,
-                achievements, and extracurricular activities.
-              </p>
+              <div className="flex justify-center">
+                <p className="text-center max-w-3xl">
+                  A detailed description of my experience at this institution, including relevant coursework,
+                  achievements, and extracurricular activities.
+                </p>
+              </div>
             </div>
 
             {/* Add more education entries as needed */}

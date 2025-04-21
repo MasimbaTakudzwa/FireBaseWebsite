@@ -1,3 +1,4 @@
+'use client';
 
 import React from 'react';
 import {cn} from "@/lib/utils";
@@ -14,10 +15,12 @@ const Home: React.FC<HomePageProps> = ({className}) => {
           <h1 className="text-5xl font-bold tracking-tight text-center">
             Hello, I&apos;m [Your Name]
           </h1>
-          <p className="mt-4 text-muted-foreground text-center">
-            A brief summary about me and the nature of this website. This is a minimalist portfolio showcasing my
-            skills, experiences, and projects.
-          </p>
+          <div className="flex justify-center">
+            <p className="mt-4 text-muted-foreground text-center max-w-3xl">
+              A brief summary about me and the nature of this website. This is a minimalist portfolio showcasing my
+              skills, experiences, and projects.
+            </p>
+          </div>
         </div>
       </section>
     </main>

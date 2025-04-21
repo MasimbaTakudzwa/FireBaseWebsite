@@ -1,3 +1,4 @@
+'use client';
 
 import React from 'react';
 import {cn} from "@/lib/utils";
@@ -21,7 +22,7 @@ const Projects: React.FC<ProjectsPageProps> = ({className}) => {
           <div className="mt-6 space-y-6">
             {/* Project 1 */}
             <div className="grid gap-4">
-              <h2 className="text-2xl font-semibold tracking-tight text-center">
+              <h2 className="text-3xl font-semibold tracking-tight text-center">
                 [Project Name]
               </h2>
               <p className="text-muted-foreground text-center">
@@ -32,14 +33,16 @@ const Projects: React.FC<ProjectsPageProps> = ({className}) => {
                 alt="Project 1"
                 className={imageStyle}
               />
-              <p className="text-center">
-                A detailed description of the project, including my role, technologies used, and key achievements.
-              </p>
+              <div className="flex justify-center">
+                <p className="text-center max-w-3xl">
+                  A detailed description of the project, including my role, technologies used, and key achievements.
+                </p>
+              </div>
             </div>
 
             {/* Project 2 */}
             <div className="grid gap-4">
-              <h2 className="text-2xl font-semibold tracking-tight text-center">
+              <h2 className="text-3xl font-semibold tracking-tight text-center">
                 [Project Name]
               </h2>
               <p className="text-muted-foreground text-center">
@@ -50,9 +53,11 @@ const Projects: React.FC<ProjectsPageProps> = ({className}) => {
                 alt="Project 2"
                 className={imageStyle}
               />
-              <p className="text-center">
-                A detailed description of the project, including my role, technologies used, and key achievements.
-              </p>
+              <div className="flex justify-center">
+                <p className="text-center max-w-3xl">
+                  A detailed description of the project, including my role, technologies used, and key achievements.
+                </p>
+              </div>
             </div>
 
             {/* Add more projects as needed */}

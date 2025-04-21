@@ -1,3 +1,4 @@
+'use client';
 
 import React from 'react';
 import {cn} from "@/lib/utils";
@@ -25,12 +26,14 @@ const About: React.FC<AboutPageProps> = ({className}) => {
           </p>
 
           <div className="mt-6 space-y-6">
-            <p className="text-center">
-              {description}
-            </p>
+            <div className="flex justify-center">
+              <p className="text-center max-w-3xl">
+                {description}
+              </p>
+            </div>
 
             <div className="grid gap-4">
-              <h2 className="text-2xl font-semibold tracking-tight text-center">Life Highlights</h2>
+              <h2 className="text-3xl font-semibold tracking-tight text-center">Life Highlights</h2>
 
               {/* Example Image with alternating alignment */}
               <div className="flex flex-col items-center md:flex-row md:items-center gap-4">
@@ -39,16 +42,20 @@ const About: React.FC<AboutPageProps> = ({className}) => {
                   alt="Life Event 1"
                   className={cn("w-full md:w-1/2", imageStyle)}
                 />
-                <p className="w-full md:w-1/2 text-center">
-                  A brief description of this life event.
-                </p>
+                <div className="flex justify-center w-full md:w-1/2">
+                  <p className="text-center max-w-md">
+                    A brief description of this life event.
+                  </p>
+                </div>
               </div>
 
               {/* Example Image with alternating alignment (Right) */}
               <div className="flex flex-col items-center md:flex-row md:items-center gap-4">
-                <p className="w-full md:w-1/2 text-center">
-                  A brief description of this life event.
-                </p>
+                <div className="flex justify-center w-full md:w-1/2">
+                  <p className="text-center max-w-md">
+                    A brief description of this life event.
+                  </p>
+                </div>
                 <img
                   src="https://picsum.photos/400/301" // Replace with your image URL
                   alt="Life Event 2"
