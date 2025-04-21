@@ -10,21 +10,21 @@ const Education: React.FC<EducationPageProps> = ({className}) => {
   const imageStyle = "rounded-md shadow-md";
 
   return (
-    <main className={cn("container relative flex min-h-screen flex-col items-center py-8", className)}>
+    <main className={cn("relative flex min-h-screen flex-col items-center py-8", className)}>
       <section className="grid gap-8 p-8 md:grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-bold tracking-tight">Education</h1>
-          <p className="text-muted-foreground">
+          <h1 className="text-4xl font-bold tracking-tight text-center">Education</h1>
+          <p className="text-muted-foreground text-center">
             A detailed page of my education history with relevant images.
           </p>
 
           <div className="mt-6 space-y-6">
             {/* Education Entry 1 */}
             <div className="grid gap-4">
-              <h2 className="text-2xl font-semibold tracking-tight">
+              <h2 className="text-2xl font-semibold tracking-tight text-center">
                 [Degree Name] - [University Name]
               </h2>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-center">
                 [Dates of Attendance]
               </p>
               <img
@@ -32,7 +32,7 @@ const Education: React.FC<EducationPageProps> = ({className}) => {
                 alt="University 1"
                 className={imageStyle}
               />
-              <p>
+              <p className="text-center">
                 A detailed description of my experience at this university, including relevant coursework,
                 achievements, and extracurricular activities.
               </p>
@@ -40,10 +40,10 @@ const Education: React.FC<EducationPageProps> = ({className}) => {
 
             {/* Education Entry 2 */}
             <div className="grid gap-4">
-              <h2 className="text-2xl font-semibold tracking-tight">
+              <h2 className="text-2xl font-semibold tracking-tight text-center">
                 [Degree Name] - [Another Institution Name]
               </h2>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-center">
                 [Dates of Attendance]
               </p>
               <img
@@ -51,7 +51,7 @@ const Education: React.FC<EducationPageProps> = ({className}) => {
                 alt="University 2"
                 className={imageStyle}
               />
-              <p>
+              <p className="text-center">
                 A detailed description of my experience at this institution, including relevant coursework,
                 achievements, and extracurricular activities.
               </p>

@@ -10,21 +10,21 @@ const Employment: React.FC<EmploymentPageProps> = ({className}) => {
   const imageStyle = "rounded-md shadow-md";
 
   return (
-    <main className={cn("container relative flex min-h-screen flex-col items-center py-8", className)}>
+    <main className={cn("relative flex min-h-screen flex-col items-center py-8", className)}>
       <section className="grid gap-8 p-8 md:grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-bold tracking-tight">Employment History</h1>
-          <p className="text-muted-foreground">
+          <h1 className="text-4xl font-bold tracking-tight text-center">Employment History</h1>
+          <p className="text-muted-foreground text-center">
             A detailed description of my employment history with relevant images.
           </p>
 
           <div className="mt-6 space-y-6">
             {/* Employment 1 */}
             <div className="grid gap-4">
-              <h2 className="text-2xl font-semibold tracking-tight">
+              <h2 className="text-2xl font-semibold tracking-tight text-center">
                 [Job Title] - [Company Name]
               </h2>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-center">
                 [Dates of Employment]
               </p>
               <img
@@ -32,7 +32,7 @@ const Employment: React.FC<EmploymentPageProps> = ({className}) => {
                 alt="Company 1"
                 className={imageStyle}
               />
-              <p>
+              <p className="text-center">
                 A detailed description of my role at this company, including responsibilities, achievements, and
                 skills gained.
               </p>
@@ -40,10 +40,10 @@ const Employment: React.FC<EmploymentPageProps> = ({className}) => {
 
             {/* Employment 2 */}
             <div className="grid gap-4">
-              <h2 className="text-2xl font-semibold tracking-tight">
+              <h2 className="text-2xl font-semibold tracking-tight text-center">
                 [Job Title] - [Another Company Name]
               </h2>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-center">
                 [Dates of Employment]
               </p>
               <img
@@ -51,7 +51,7 @@ const Employment: React.FC<EmploymentPageProps> = ({className}) => {
                 alt="Company 2"
                 className={imageStyle}
               />
-              <p>
+              <p className="text-center">
                 A detailed description of my role at this company, including responsibilities, achievements, and
                 skills gained.
               </p>

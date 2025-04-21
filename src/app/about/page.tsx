@@ -16,37 +16,37 @@ const About: React.FC<AboutPageProps> = ({className}) => {
   const imageStyle = "rounded-md shadow-md";
 
   return (
-    <main className={cn("container relative flex min-h-screen flex-col items-center py-8", className)}>
+    <main className={cn("relative flex min-h-screen flex-col items-center py-8", className)}>
       <section className="grid gap-8 p-8 md:grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-bold tracking-tight">About Me</h1>
-          <p className="text-muted-foreground">
+          <h1 className="text-4xl font-bold tracking-tight text-center">About Me</h1>
+          <p className="text-muted-foreground text-center">
             A detailed description of my background, experiences, and passions.
           </p>
 
           <div className="mt-6 space-y-6">
-            <p>
+            <p className="text-center">
               {description}
             </p>
 
             <div className="grid gap-4">
-              <h2 className="text-2xl font-semibold tracking-tight">Life Highlights</h2>
+              <h2 className="text-2xl font-semibold tracking-tight text-center">Life Highlights</h2>
 
               {/* Example Image with alternating alignment */}
-              <div className="flex flex-col items-start md:flex-row md:items-center gap-4">
+              <div className="flex flex-col items-center md:flex-row md:items-center gap-4">
                 <img
                   src="https://picsum.photos/400/300" // Replace with your image URL
                   alt="Life Event 1"
                   className={cn("w-full md:w-1/2", imageStyle)}
                 />
-                <p className="w-full md:w-1/2">
+                <p className="w-full md:w-1/2 text-center">
                   A brief description of this life event.
                 </p>
               </div>
 
               {/* Example Image with alternating alignment (Right) */}
-              <div className="flex flex-col items-start md:flex-row md:items-center gap-4">
-                <p className="w-full md:w-1/2">
+              <div className="flex flex-col items-center md:flex-row md:items-center gap-4">
+                <p className="w-full md:w-1/2 text-center">
                   A brief description of this life event.
                 </p>
                 <img
