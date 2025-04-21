@@ -51,8 +51,8 @@ const Education: React.FC<EducationPageProps> = ({className}) => {
                 BSc in Computer Science
               </p>
               <img
-                src="https://picsum.photos/400/303" // Replace with your image URL
-                alt="University 2"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Durham_University_Logo.svg/2560px-Durham_University_Logo.svg.png"
+                alt="Durham University Logo"
                 className={imageStyle}
               />
               <div className="flex justify-center">
