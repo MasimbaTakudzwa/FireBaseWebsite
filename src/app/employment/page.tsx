@@ -12,8 +12,8 @@ const Employment: React.FC<EmploymentPageProps> = ({className}) => {
 
   return (
     <main className={cn("relative flex min-h-screen flex-col items-center py-8", className)}>
-      <section className="container grid gap-8 p-8 md:grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col gap-4">
+      <section className="container">
+        <div className="flex flex-col items-center px-8">
           <h1 className="text-4xl font-bold tracking-tight text-center">Employment History</h1>
           <p className="text-muted-foreground text-center">
             A detailed description of my employment history with relevant images.

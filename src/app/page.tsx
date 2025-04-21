@@ -11,7 +11,7 @@ const Home: React.FC<HomePageProps> = ({className}) => {
   return (
     <main className={cn("relative flex min-h-screen flex-col items-center justify-center gap-4 py-8", className)}>
       <section className="container">
-        <div className="flex flex-col justify-center items-center px-8">
+        <div className="flex flex-col items-center px-8">
           <h1 className="text-5xl font-bold tracking-tight text-center">
             Hello, I&apos;m [Your Name]
           </h1>
