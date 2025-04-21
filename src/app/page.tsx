@@ -12,6 +12,11 @@ const Home: React.FC<HomePageProps> = ({className}) => {
     <main className={cn("relative flex min-h-screen flex-col items-center justify-center gap-4 py-8", className)}>
       <section className="container">
         <div className="flex flex-col items-center px-8">
+        <img
+                src="/Images/Profile.png"
+                alt="Profile Picture"
+                className="rounded-full shadow-md w-32 h-32 mb-4"
+              />
           <h1 className="text-5xl font-bold tracking-tight text-center">
             Hello, I&apos;m Masimba Gangaidzo
           </h1>
@@ -27,3 +32,4 @@ const Home: React.FC<HomePageProps> = ({className}) => {
 };
 
 export default Home;
+
