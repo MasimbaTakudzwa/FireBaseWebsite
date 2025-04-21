@@ -14,11 +14,11 @@ const About: React.FC<AboutPageProps> = ({className}) => {
   I enjoy working on projects that challenge me to learn new things and push the boundaries of what is possible.
 `;
 
-  const imageStyle = "rounded-md shadow-md";
+  const imageStyle = "rounded-md shadow-md w-full md:w-auto";
 
   return (
     <main className={cn("relative flex min-h-screen flex-col items-center py-8", className)}>
-      <section className="grid gap-8 p-8 md:grid-cols-1 lg:grid-cols-2">
+      <section className="container grid gap-8 p-8 md:grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-bold tracking-tight text-center">About Me</h1>
           <p className="text-muted-foreground text-center">
@@ -36,11 +36,11 @@ const About: React.FC<AboutPageProps> = ({className}) => {
               <h2 className="text-3xl font-semibold tracking-tight text-center">Life Highlights</h2>
 
               {/* Example Image with alternating alignment */}
-              <div className="flex flex-col items-center md:flex-row md:items-center gap-4">
+              <div className="flex flex-col items-center md:flex-row gap-4">
                 <img
                   src="https://picsum.photos/400/300" // Replace with your image URL
                   alt="Life Event 1"
-                  className={cn("w-full md:w-1/2", imageStyle)}
+                  className={cn("md:w-1/2", imageStyle)}
                 />
                 <div className="flex justify-center w-full md:w-1/2">
                   <p className="text-center max-w-md">
@@ -50,7 +50,7 @@ const About: React.FC<AboutPageProps> = ({className}) => {
               </div>
 
               {/* Example Image with alternating alignment (Right) */}
-              <div className="flex flex-col items-center md:flex-row md:items-center gap-4">
+              <div className="flex flex-col items-center md:flex-row gap-4">
                 <div className="flex justify-center w-full md:w-1/2">
                   <p className="text-center max-w-md">
                     A brief description of this life event.
@@ -59,7 +59,7 @@ const About: React.FC<AboutPageProps> = ({className}) => {
                 <img
                   src="https://picsum.photos/400/301" // Replace with your image URL
                   alt="Life Event 2"
-                  className={cn("w-full md:w-1/2", imageStyle)}
+                  className={cn("md:w-1/2", imageStyle)}
                 />
               </div>
 

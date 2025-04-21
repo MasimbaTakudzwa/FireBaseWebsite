@@ -8,11 +8,11 @@ interface EmploymentPageProps {
 }
 
 const Employment: React.FC<EmploymentPageProps> = ({className}) => {
-  const imageStyle = "rounded-md shadow-md";
+  const imageStyle = "rounded-md shadow-md w-full md:w-auto";
 
   return (
     <main className={cn("relative flex min-h-screen flex-col items-center py-8", className)}>
-      <section className="grid gap-8 p-8 md:grid-cols-1 lg:grid-cols-2">
+      <section className="container grid gap-8 p-8 md:grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-bold tracking-tight text-center">Employment History</h1>
           <p className="text-muted-foreground text-center">
