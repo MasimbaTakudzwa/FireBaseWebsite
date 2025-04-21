@@ -32,4 +32,3 @@ const Home: React.FC<HomePageProps> = ({className}) => {
 };
 
 export default Home;
-

@@ -86,8 +86,8 @@ const Education: React.FC<EducationPageProps> = ({className}) => {
               </div>
             </div>
 
-            {/* Education Entry 4 */}
-            <div className="grid gap-4">
+             {/* Education Entry 4 */}
+             <div className="grid gap-4">
               <h2 className="text-3xl font-semibold tracking-tight text-center">
                 St John&apos;s Prep (Harare, Zimbabwe)
               </h2>
