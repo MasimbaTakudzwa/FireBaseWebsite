@@ -1,8 +1,6 @@
 
 import React from 'react';
-import Link from 'next/link';
 import {cn} from "@/lib/utils";
-import {Button} from "@/components/ui/button";
 
 interface HomePageProps {
   className?: string;
@@ -20,34 +18,6 @@ const Home: React.FC<HomePageProps> = ({className}) => {
             A brief summary about me and the nature of this website. This is a minimalist portfolio showcasing my
             skills, experiences, and projects.
           </p>
-        </div>
-
-        <div className="flex flex-col gap-4">
-          <nav>
-            <h2 className="text-2xl font-semibold tracking-tight">Navigation</h2>
-            <ul className="mt-2 space-y-2">
-              <li>
-                <Link href="/about" className="hover:text-accent">
-                  <Button variant="link">About Me</Button>
-                </Link>
-              </li>
-              <li>
-                <Link href="/education" className="hover:text-accent">
-                  <Button variant="link">Education</Button>
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects" className="hover:text-accent">
-                  <Button variant="link">Projects</Button>
-                </Link>
-              </li>
-              <li>
-                <Link href="/employment" className="hover:text-accent">
-                  <Button variant="link">Employment</Button>
-                </Link>
-              </li>
-            </ul>
-          </nav>
         </div>
       </section>
     </main>
