@@ -84,7 +84,6 @@ body {
   }
   body {
     @apply bg-background text-foreground;
-    @apply flex justify-center items-center; /* Center items */
   }
 
   h1 {
