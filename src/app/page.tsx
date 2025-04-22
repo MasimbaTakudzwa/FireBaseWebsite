@@ -13,7 +13,7 @@ const Home: React.FC<HomePageProps> = ({className}) => {
       <section className="container">
         <div className="flex flex-col items-center px-8">
         <img
-                src="/Images/Profile.png"
+                src="/images/ProfilePicture.png" // Corrected path
                 alt="Profile Picture"
                 className="rounded-full shadow-md w-32 h-32 mb-4"
               />
